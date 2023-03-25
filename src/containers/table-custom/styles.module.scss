@@ -1,0 +1,53 @@
+.customTable {
+  & table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  & thead {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    & tr {
+      background-color: #009879;
+      color: #ffffff;
+      text-align: left;
+    }
+  }
+  & th {
+    padding: 12px 15px;
+  }
+  & td {
+    padding: 12px 15px;
+  }
+  & tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  & tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  & tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+
+  .sortButton {
+    background-color: transparent;
+    border: none;
+
+    padding: 5px 10px;
+    margin: 0;
+    line-height: 1;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+
+    transition: transform 0.05s ease-out;
+  }
+
+  .sortReverse {
+    transform: rotate(180deg);
+  }
+}

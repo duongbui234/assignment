@@ -1,0 +1,42 @@
+.formInputWrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  input {
+    display: block;
+    padding: 14px 10px 3px;
+    border-radius: 2px;
+    border: 1px solid #d4d6d8;
+    width: 100%;
+    line-height: normal;
+    height: 42px;
+    color: #1e2d7d;
+    resize: none;
+    font-size: 12px;
+    outline: none;
+    box-shadow: 0 1px rgba(212, 214, 216, 0.25) inset;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+      color 0.2s ease-in-out;
+  }
+  input:focus ~ label {
+    transform: translateY(-6px) scale(0.8);
+  }
+  .floating-label {
+    transform: translateY(-6px) scale(0.8);
+  }
+  label {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    line-height: 42px;
+    font-size: 12px;
+    margin-bottom: 0;
+    color: #677279;
+    transform: scale(1);
+    transform-origin: left top;
+    transition: -webkit-transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out;
+    transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+    pointer-events: none;
+  }
+}
